@@ -1,0 +1,36 @@
+#modal
+  #header
+    h1 Enter Payment Details
+  div.object 
+    img(src='http://www.cbwconline.com/IMG/Codepen/Couch.jpg')
+    span $2,587.98
+  form
+  
+    input(type='radio' id='Master' name='card' required)
+    label(for='Master' class='card')
+    
+    input(type='radio' id='Visa' name='card' required)
+    label(for='Visa' class='card')
+    
+    input(type='radio' id='Discover' name='card' required)
+    label(for='Discover' class='card')
+    br
+
+    label(for='name') Name  
+    input(type='text' placeholder='John Grey' id='name' Required) 
+    br
+    label(for='number') Card Number 
+    input(type='number' maxlength='16' placeholder='2872 1369 4201 9432' id='number' Required)
+    br
+    label(for='expire') Expiration
+    input(type='text' maxlength='5' placeholder='MM/YY' id='expire' Required)
+    
+    label(for='cvc') CVC
+    input(type='number' maxlength='3' placeholder='385' id='cvc' Required)
+    br
+   
+    button(type='submit') Confirm Pament of $2,587.98
+
+a(href='https://codepen.io/koenigsegg1/' target='_blank')
+  #container(title='View My Profile')
+    #fab
